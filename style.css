@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: cursive;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+}
+
+.navbar-1 {
+    background-color: white;
+    color: limegreen;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 98%;
+    top: 0%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-2 {
+    background-color: limegreen;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 98%;
+    top: 60px;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6); /* Box shadow added here */
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit;
+}
+.content {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.text-container {
+    flex: 1;
+    margin: 20px;
+}
+
+.text-1 {
+    flex: 1;
+    color: black;
+}
+
+.text-2 {
+    flex: 1;
+    color: limegreen;
+}
+
+.text-3 {
+    flex: 1;
+    color: black;
+    font-family: sans-serif;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-img {
+    width: 50%;
+    height: auto;
+}
+
+.image-container {
+    max-width: 50%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.text-4 {
+    text-align: center;
+}
+
+.aboutUs {
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kata {
+    font-family: serif;
+    font-style: italic;
+    background-color: whitesmoke;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: limegreen;
+    color: white;
+    align-items: flex-start;
+    padding-bottom: 5px;
+    flex: 1;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.footer-container {
+    flex: 1;
+    margin: 20px;
+    text-align: left;
+}
+
+.footer-text{
+    font-family: serif;
+}
+
+.credit {
+    background-color: rgb(18, 92, 34);
+    color: rgb(18, 110, 34);
+    text-align: center;
+    padding: 1px;
+}

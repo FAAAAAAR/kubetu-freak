@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubetu Freak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://YOUR_DISQUS_SHORTNAME.disqus.com/embed.js"></script>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar-1">
+        <h2>Kubetu Freak</h2>
+    </nav>
+    <nav class="navbar-2">
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Halaman Utama</a></li>
+            <li class="menu-item"><a href="gallery.html">Memories</a></li>
+            <li class="menu-item"><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+    <br>
+    <!-- Content start -->
+    <div class="content">
+        <div class="text-container">
+            <h4 class="text-1">Persahabatan seperti pohon yang tumbuh bersama, </h4>
+            <h4 class="text-2">akar saling terjalin,
+                <h4 class="text-1"> dan dedaunnya menari bersama angin kehidupan</h4>
+                <h5 class="text-3">Halo selamat datang semua. Ini web buat gabut doang, gak ada apa-apa kecuali masa depan yang cerah</h5>
+
+    </div>
+
+        <!-- Gallery start -->
+        <div class="image-container">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="img.jpg" alt="Gambar 1" class="slide-img image">
+                </div>
+
+                <div class="mySlides">
+                    <img src="img.jpg" alt="Gambar 2" class="slide-img image">
+                </div>
+
+                <div class="mySlides">
+                    <img src="img.jpg" alt="Gambar 3" class="slide-img image">
+                </div>
+            </div>
+        
+            <!-- Script js -->
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    const slides = document.getElementsByClassName("mySlides");
+
+                    if (n > slides.length) {
+                        slideIndex = 1;
+                    }
+
+                    if (n < 1) {
+                        slideIndex = slides.length;
+                    }
+
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+                }
+
+                function autoSlide() {
+                    plusSlides(1);
+                }
+
+                setInterval(autoSlide, 3000);
+            </script>
+        </div>
+        <!--Gallery End-->
+    
+    </div>
+    <!--Content end-->
+    <br>
+    <!--About Us Start-->
+    <div class="aboutUs">
+        <h4 class="text-4">Kata-katanya dong kak</h4>
+        <h4 class="kata">"Sesuatu yang kecil dapat berpengaruh besar di masa depan" ~FAR</h4>
+        <h4 class="kata">"Tetap berfikir positif. Lakukan yang bermanfaat dan jangan paksa dirimu menjadi apa yang orang lain mau" ~Rafa</h4>
+        <h4 class="kata">"Lebih baik diam tapi tahu, daripada ribut tapi tidak tahu" ~</h4>
+        <h4 class="kata">"Jika orang lain bisa, maka aku juga harus bisa, bahkan lebih dari mereka" ~</h4>
+        <h4 class="kata">"Berbuat baiklah tanpa alasan. Jangan membuat dirimu. Berbahagialah dengan caramu sendiri" ~Rara</h4>
+        <h4 class="kata">"Sebelum mencoba, jangan menyerah. Dan jika gagal tetap harus mencoba dan berusaha" ~</h4>
+        <h4 class="kata">"Teruslah hidup, walau membosankan" ~</h4>
+        <h4 class="kata">"Hiduplah di jalan prinsip hidup sendiri" ~Fahri</h4>
+        <h4 class="kata">"Perbanyak aksi, bukan motivasi" ~</h4>
+    </div>
+    <!--About Us End-->
+    <br>
+    <!--Comment Selection start-->
+    <div id="comment-section"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = 'YOUR_PAGE_URL'; // Replace with your page URL
+            this.page.identifier = 'YOUR_PAGE_IDENTIFIER'; // Replace with a unique identifier for your page
+        };
+    </script>
+    <!--Comment Selection End-->
+    <br>
+    <!--Footer Start-->
+    <div class="footer">
+        <h2> Kubetu Freak</h2>
+        <div class="footer-container">
+            <h6 class="footer-text">
+                <a href="https://wa.me/+6285758668666" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+            </h6>
+            <h6 class="footer-text">
+                <a href="https://www.facebook.com/search/top/?q=Muhammad%20Fattan" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                Facebook
+                </a>
+            </h6>
+            <h6 class="footer-text">
+                <a href="mailto:fattanar84@email.com" target="_blank" title="Email">
+                    <i class="fas fa-envelope"></i>
+                Email
+                </a>
+            </h6>
+        </div>
+        <div class="credit">
+            <h6>Made By Muhammad Fattan</h6>
+        </div>
+    </div>
+    <!--Footer End-->
+</body>
+</html>
